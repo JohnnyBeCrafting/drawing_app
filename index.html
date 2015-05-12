@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML5 Canvas Drawing App</title>
+		<link rel="stylesheet" href="styles/styles.css">
+	</head>
+	<body>
+		<div class="main-wrapper">
+		  <canvas height='600' width='400'></canvas>
+		  <div class="control">
+		    <ul id="default-colors" class="default cf">
+		      <li class="color-unit red selected"></li>
+		      <li class="color-unit green"></li>
+		      <li class="color-unit blue"></li>
+		    </ul>
+		    <div id="color-select" class="control-input">
+		      <button id="new-color" class="new_color">New Color</button>
+		<!--      color display goes here -->  
+		      <div class="slides-control cf">
+		        <span class="display-screen"></span>
+		        <div class="slide-wrapper">
+		          <label>Red</label>
+		          <input type="range" min= 0 max= 250 value= 0 id="red">
+		        </div>
+		        <div class="slide-wrapper">
+		          <label>Green</label>
+		          <input type="range" min=0 max=250 value=0 id="green">
+		        </div>
+		        <div class="slide-wrapper">
+		          <label>Blue</label>
+		          <input type="range" min=0 max=250 value=0 id="blue">
+		        </div>
+		        <button class="add_color">Add New Color</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts/scripts.js"></script>
+	</body>
+</html>
